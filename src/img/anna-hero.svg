@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <clipPath id="circle">
+      <circle cx="200" cy="200" r="200"/>
+    </clipPath>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5ede6"/>
+      <stop offset="100%" stop-color="#e8d5c8"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c97a"/>
+      <stop offset="100%" stop-color="#d4a855"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5d6c3"/>
+      <stop offset="100%" stop-color="#ecc4ab"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#circle)">
+    <!-- Background -->
+    <rect width="400" height="400" fill="url(#bg)"/>
+    <!-- Body / Shoulders -->
+    <ellipse cx="200" cy="420" rx="140" ry="80" fill="#c4907a" opacity="0.9"/>
+    <ellipse cx="200" cy="420" rx="120" ry="70" fill="#d4a08a"/>
+    <!-- Neck -->
+    <rect x="175" y="295" width="50" height="45" rx="10" fill="url(#skin)"/>
+    <!-- Hair back -->
+    <ellipse cx="200" cy="200" rx="115" ry="130" fill="url(#hair)"/>
+    <!-- Face -->
+    <ellipse cx="200" cy="210" rx="85" ry="100" fill="url(#skin)"/>
+    <!-- Hair front -->
+    <path d="M115 180 Q120 130 160 120 Q180 115 200 118 Q220 115 240 120 Q280 130 285 180 Q270 145 240 140 Q210 135 200 138 Q190 135 160 140 Q130 145 115 180Z" fill="url(#hair)"/>
+    <!-- Hair side left -->
+    <path d="M115 180 Q108 220 112 270 Q115 280 125 275 Q130 250 128 220 Q125 195 115 180Z" fill="url(#hair)" opacity="0.9"/>
+    <!-- Hair side right -->
+    <path d="M285 180 Q292 220 288 270 Q285 280 275 275 Q270 250 272 220 Q275 195 285 180Z" fill="url(#hair)" opacity="0.9"/>
+    <!-- Eyes -->
+    <ellipse cx="170" cy="215" rx="16" ry="10" fill="white"/>
+    <ellipse cx="230" cy="215" rx="16" ry="10" fill="white"/>
+    <circle cx="172" cy="215" r="7" fill="#5a4840"/>
+    <circle cx="232" cy="215" r="7" fill="#5a4840"/>
+    <circle cx="174" cy="213" r="2.5" fill="white"/>
+    <circle cx="234" cy="213" r="2.5" fill="white"/>
+    <!-- Eyebrows -->
+    <path d="M152 198 Q165 192 188 196" stroke="#b8935a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M212 196 Q235 192 248 198" stroke="#b8935a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Glasses -->
+    <rect x="148" y="203" width="44" height="28" rx="12" fill="none" stroke="#5a4840" stroke-width="2.5"/>
+    <rect x="208" y="203" width="44" height="28" rx="12" fill="none" stroke="#5a4840" stroke-width="2.5"/>
+    <line x1="192" y1="217" x2="208" y2="217" stroke="#5a4840" stroke-width="2"/>
+    <line x1="148" y1="215" x2="135" y2="212" stroke="#5a4840" stroke-width="2"/>
+    <line x1="252" y1="215" x2="265" y2="212" stroke="#5a4840" stroke-width="2"/>
+    <!-- Nose -->
+    <path d="M200 225 Q195 240 192 245 Q196 248 200 248 Q204 248 208 245 Q205 240 200 225" fill="#e8b89a" opacity="0.6"/>
+    <!-- Mouth - warm smile -->
+    <path d="M180 265 Q190 275 200 276 Q210 275 220 265" stroke="#c4907a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Cheeks blush -->
+    <ellipse cx="155" cy="250" rx="18" ry="10" fill="#d4907a" opacity="0.2"/>
+    <ellipse cx="245" cy="250" rx="18" ry="10" fill="#d4907a" opacity="0.2"/>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+*.swp
+*.swo
+
+# Temp
+*.tmp
+*.bak

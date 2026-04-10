@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5ede6"/>
+      <stop offset="100%" stop-color="#ece0d4"/>
+    </linearGradient>
+    <linearGradient id="hair2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c97a"/>
+      <stop offset="100%" stop-color="#d4a855"/>
+    </linearGradient>
+    <linearGradient id="skin2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5d6c3"/>
+      <stop offset="100%" stop-color="#ecc4ab"/>
+    </linearGradient>
+    <linearGradient id="sweater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c4907a"/>
+      <stop offset="100%" stop-color="#b07a65"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" rx="20" fill="url(#bg2)"/>
+
+  <!-- Body / Sweater -->
+  <path d="M100 390 Q100 360 140 340 Q170 325 200 320 Q230 325 260 340 Q300 360 300 390 L300 500 L100 500Z" fill="url(#sweater)"/>
+  <!-- Sweater neckline -->
+  <path d="M160 340 Q180 355 200 358 Q220 355 240 340" fill="none" stroke="#a87060" stroke-width="2"/>
+
+  <!-- Neck -->
+  <rect x="180" y="290" width="40" height="40" rx="8" fill="url(#skin2)"/>
+
+  <!-- Hair back -->
+  <ellipse cx="200" cy="195" rx="110" ry="125" fill="url(#hair2)"/>
+
+  <!-- Hair flowing down -->
+  <path d="M108 220 Q95 280 100 340 Q105 360 115 355 Q118 330 115 280 Q112 240 108 220Z" fill="url(#hair2)" opacity="0.85"/>
+  <path d="M292 220 Q305 280 300 340 Q295 360 285 355 Q282 330 285 280 Q288 240 292 220Z" fill="url(#hair2)" opacity="0.85"/>
+
+  <!-- Face -->
+  <ellipse cx="200" cy="205" rx="82" ry="96" fill="url(#skin2)"/>
+
+  <!-- Hair front / bangs -->
+  <path d="M118 175 Q125 125 165 115 Q185 110 200 113 Q215 110 235 115 Q275 125 282 175 Q268 140 238 133 Q215 128 200 130 Q185 128 162 133 Q132 140 118 175Z" fill="url(#hair2)"/>
+
+  <!-- Eyes -->
+  <ellipse cx="172" cy="210" rx="15" ry="10" fill="white"/>
+  <ellipse cx="228" cy="210" rx="15" ry="10" fill="white"/>
+  <circle cx="174" cy="210" r="7" fill="#5a4840"/>
+  <circle cx="230" cy="210" r="7" fill="#5a4840"/>
+  <circle cx="176" cy="208" r="2.5" fill="white"/>
+  <circle cx="232" cy="208" r="2.5" fill="white"/>
+
+  <!-- Eyebrows -->
+  <path d="M154 194 Q167 188 186 192" stroke="#b8935a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M214 192 Q233 188 246 194" stroke="#b8935a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Glasses -->
+  <rect x="150" y="198" width="42" height="27" rx="11" fill="none" stroke="#5a4840" stroke-width="2.5"/>
+  <rect x="208" y="198" width="42" height="27" rx="11" fill="none" stroke="#5a4840" stroke-width="2.5"/>
+  <line x1="192" y1="212" x2="208" y2="212" stroke="#5a4840" stroke-width="2"/>
+  <line x1="150" y1="210" x2="138" y2="207" stroke="#5a4840" stroke-width="2"/>
+  <line x1="250" y1="210" x2="262" y2="207" stroke="#5a4840" stroke-width="2"/>
+
+  <!-- Nose -->
+  <path d="M200 220 Q196 234 193 238 Q197 241 200 241 Q203 241 207 238 Q204 234 200 220" fill="#e8b89a" opacity="0.5"/>
+
+  <!-- Mouth - warm smile -->
+  <path d="M182 258 Q191 268 200 270 Q209 268 218 258" stroke="#c4907a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Cheeks blush -->
+  <ellipse cx="157" cy="243" rx="16" ry="9" fill="#d4907a" opacity="0.2"/>
+  <ellipse cx="243" cy="243" rx="16" ry="9" fill="#d4907a" opacity="0.2"/>
+
+  <!-- Hands / cup suggestion -->
+  <ellipse cx="165" cy="450" rx="25" ry="15" fill="url(#skin2)" opacity="0.8"/>
+  <ellipse cx="235" cy="450" rx="25" ry="15" fill="url(#skin2)" opacity="0.8"/>
+  <!-- Cup -->
+  <rect x="180" y="430" width="40" height="35" rx="5" fill="#e8d5c8" stroke="#d4c0b0" stroke-width="1.5"/>
+  <path d="M220 440 Q235 442 233 455 Q230 465 220 462" fill="none" stroke="#d4c0b0" stroke-width="1.5"/>
+  <!-- Steam -->
+  <path d="M192 425 Q190 415 195 408" stroke="#d4c0b0" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M200 423 Q198 412 203 405" stroke="#d4c0b0" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M208 425 Q206 415 211 408" stroke="#d4c0b0" stroke-width="1.5" fill="none" opacity="0.3"/>
+</svg>
