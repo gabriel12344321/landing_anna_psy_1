@@ -23,7 +23,7 @@
 
   <!-- Preload critical fonts -->
   <link rel="preload" href="fonts/playfair-600-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/nunito-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/dmsans-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -41,16 +41,21 @@
     </div>
   </header>
 
-  <!-- БЛОК 2 — HERO -->
+  <!-- БЛОК 2 — HERO (split layout) -->
   <section class="hero" id="hero">
-    <div class="container">
-      <div class="hero__photo">
-        <img src="img/anna-hero.jpg" alt="Психолог Анна Копысова" width="280" height="280" fetchpriority="high">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <p class="hero__label">Психолог &middot; Гештальт-подход</p>
+        <h1 class="hero__title">Когда внутри всё перемешалось&nbsp;&mdash; это&nbsp;не&nbsp;слабость. Это&nbsp;сигнал.</h1>
+        <p class="hero__subtitle">Я&nbsp;&mdash; Анна Копысова. Работаю с&nbsp;женщинами, которые потеряли себя в&nbsp;заботе о&nbsp;других. Помогаю вернуть ясность, спокойствие и&nbsp;контакт с&nbsp;собой.</p>
+        <div class="hero__actions">
+          <a href="#cta" class="btn btn--primary">Написать Анне</a>
+          <p class="hero__note">Без обязательств &middot; Первый шаг</p>
+        </div>
       </div>
-      <h1 class="hero__title">Когда внутри всё перемешалось&nbsp;&mdash; это&nbsp;не&nbsp;слабость. Это&nbsp;сигнал.</h1>
-      <p class="hero__subtitle">Я&nbsp;&mdash; Анна, психолог. Работаю с&nbsp;женщинами, которые потеряли себя в&nbsp;заботе о&nbsp;других. Помогаю вернуть ясность, спокойствие и&nbsp;контакт с&nbsp;собой.</p>
-      <a href="#cta" class="btn btn--primary">Написать Анне</a>
-      <p class="hero__note">Без обязательств &middot; Первый шаг</p>
+      <div class="hero__photo">
+        <img src="img/anna-hero.jpg" alt="Психолог Анна Копысова" width="600" height="700" fetchpriority="high">
+      </div>
     </div>
   </section>
 
