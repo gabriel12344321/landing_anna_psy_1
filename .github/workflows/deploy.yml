@@ -1,0 +1,35 @@
+name: Deploy to Cloud.ru
+
+on:
+  push:
+    branches: [main]
+
+env:
+  IMAGE_NAME: anna-psy-landing
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Log in to Cloud.ru Artifact Registry
+        run: |
+          echo "${{ secrets.EVO_CR_PWD }}" | \
+          docker login "${{ secrets.EVO_REGISTRY }}" \
+          -u "${{ secrets.EVO_CR_LOGIN }}" --password-stdin
+
+      - name: Build Docker image
+        run: |
+          docker build \
+            --platform linux/amd64 \
+            -t "${{ secrets.EVO_REGISTRY }}/${{ env.IMAGE_NAME }}:latest" \
+            -t "${{ secrets.EVO_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}" \
+            .
+
+      - name: Push image to Artifact Registry
+        run: |
+          docker push "${{ secrets.EVO_REGISTRY }}/${{ env.IMAGE_NAME }}:latest"
+          docker push "${{ secrets.EVO_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}"
