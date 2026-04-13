@@ -10,3 +10,13 @@ Thumbs.db
 # Temp
 *.tmp
 *.bak
+# Секреты и переменные окружения
+.env
+.env.local
+.env.*
+
+# Ключи и токены
+*.key
+*.pem
+secrets.json
+config.local.js
